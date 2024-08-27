@@ -49,7 +49,7 @@ body{
     outline: none;
 }
 .mensaje{
-    background-image: url(/AluraOne/Encriptador/assets/muñeco.png);
+    background-image: url(assets/muñeco.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color:  var(--color-muñeco);
