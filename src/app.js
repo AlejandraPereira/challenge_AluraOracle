@@ -1,12 +1,11 @@
 const input = document.querySelector(".texto");
 const mensaje = document.querySelector(".mensaje");
 
-// Función para encriptar el texto
 function encriptar() {
-    const texto = input.value; // Obtener el texto del textarea
+    const texto = input.value;
     let textoEncriptado = "";
 
-    if (/^[a-z]+$/.test(texto)) { // Validar que solo contenga letras minúsculas
+    if (/^[a-z\s]+$/.test(texto)) { // Validar que solo contenga letras minúsculas y espacios
         for (let i = 0; i < texto.length; i++) {
             switch (texto[i]) {
                 case 'a':
@@ -24,6 +23,9 @@ function encriptar() {
                 case 'u':
                     textoEncriptado += "ufat";
                     break;
+                case ' ':
+                    textoEncriptado += " "; // Mantener espacios
+                    break;
                 default:
                     textoEncriptado += texto[i];
                     break;
@@ -32,17 +34,16 @@ function encriptar() {
         mensaje.value = textoEncriptado; 
         mensaje.style.backgroundImage = "none";
     } else {
-        alert("El texto solo debe contener letras minúsculas.");
+        alert("El texto solo debe contener letras minúsculas y espacios.");
     }
     input.value = "";
 }
 
-// Función para desencriptar el texto
 function desencriptar() {
-    const texto = input.value; 
+    const texto = input.value;
     let textoDesencriptado = texto;
 
-    if (/^[a-z]*(ai|enter|imes|ober|ufat)*$/.test(texto)) { // Validar que el texto es válido para desencriptar
+    if (/^[a-z\s]*(ai|enter|imes|ober|ufat|\s)*$/.test(texto)) { // Validar que el texto es válido para desencriptar, incluyendo espacios
         textoDesencriptado = textoDesencriptado.replace(/ai/g, "a");
         textoDesencriptado = textoDesencriptado.replace(/enter/g, "e");
         textoDesencriptado = textoDesencriptado.replace(/imes/g, "i");  
