@@ -1,6 +1,6 @@
 ENCRIPTADOR DE TEXTO
 
-Este proyecto fue desarrollado en un entorno Mac utilizando el lenguaje de programación JavaScript como parte de un challenge del curso de Oracle ofrecido por Alura Latam. La herramienta está diseñada para encriptar y desencriptar texto utilizando un sistema de sustitución basado en las siguientes llaves de encriptación:
+Este proyecto fue desarrollado en un entorno Mac utilizando el lenguaje de programación JavaScript como parte de un challenge del curso de Oracle One ofrecido por Alura Latam. La herramienta está diseñada para encriptar y desencriptar texto utilizando un sistema de sustitución basado en las siguientes llaves de encriptación:
 
 - La letra "a" es convertida a "ai"
 - La letra "e" es convertida a "enter"
