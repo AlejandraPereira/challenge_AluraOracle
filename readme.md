@@ -1,60 +1,59 @@
-ENCRIPTADOR DE TEXTO
+TEXT ENCRYPTOR
 
-Este proyecto fue desarrollado en un entorno Mac utilizando el lenguaje de programación JavaScript como parte de un challenge del curso de Oracle One ofrecido por Alura Latam. La herramienta está diseñada para encriptar y desencriptar texto utilizando un sistema de sustitución basado en las siguientes llaves de encriptación:
+This project was developed in a Mac environment using the JavaScript programming language as part of a challenge of the Oracle One course offered by Alura Latam. The tool is designed to encrypt and decrypt text using a substitution system based on the following encryption keys:
 
-- La letra "a" es convertida a "ai"
-- La letra "e" es convertida a "enter"
-- La letra "i" es convertida a "imes"
-- La letra "o" es convertida a "ober"
-- La letra "u" es convertida a "ufat"
+- The letter "a" is converted to "ai"
+- The letter "e" is converted to "enter"
+- The letter "i" is converted to "imes"
+- The letter "o" is converted to "ober"
+- The letter "u" is converted to "ufat"
 
-CONSIDERACIONES:
+CONSIDERATIONS:
 
-- Solo se permite el uso de letras minúsculas.
-- No utilizar acentos, signos o caracteres especiales.
+- Only the use of lowercase letters is allowed.
+- Do not use accents, signs or special characters.
 
-ELEMENTOS PRINCIPALES DE LA PÁGINA
+MAIN ELEMENTS OF THE PAGE
 
-- Campo para el texto que va a ser encriptado/desencriptado: Area ingresar el texto que se desea procesar.
-- Botón para encriptar: Al hacer clic, convierte el texto ingresado en su versión encriptada.
-- Botón para desencriptar: Al hacer clic, convierte el texto ingresado en su versión desencriptada.
-- Área para mostrar el texto encriptado/desencriptado: donde se muestra el resultado después de procesar el texto.
+- Field for the text to be encrypted/decrypted: Area to enter the text you want to process.
+- Encrypt button: When clicked, converts the entered text into its encrypted version.
+- Decrypt button: When clicked, converts the entered text into its decrypted version.
+- Encrypted/decrypted text display area: where the result after processing the text is displayed.
 
-COMO FUNCIONA
+HOW IT WORKS
 
-ENCRIPTACION:
+ENCRYPTION:
 
-El proceso de encriptación transforma el texto original en una versión encriptada basada en las llaves de encriptación. A continuación, se muestran algunos ejemplos:
+The encryption process transforms the original text into an encrypted version based on the encryption keys. Here are some examples:
 
-Entrada: "gato"
-Proceso: La letra "a" se convierte en "ai" y la letra "o" se convierte en "ober".
-Salida: "gaitober"
+Input: "cat"
+Process: The letter "a" becomes "ai" and the letter "o" becomes "ober".
+Output: "gaitober"
 
-Entrada: "cielo"
-Proceso: La letra "i" se convierte en "imes" y la letra "o" se convierte en "ober".
-Salida: "caieltober"
+Input: "sky"
+Process: The letter "i" becomes "imes" and the letter "o" becomes "ober".
+Output: "caieltober"
 
-Entrada: "amigo"
-Proceso: La letra "a" se convierte en "ai" y la letra "o" se convierte en "ober".
-Salida: "aimigober"
+Input: "amigo"
+Process: The letter "a" becomes "ai" and the letter "o" becomes "ober".
+Output: "aimigober"
 
-DESENCRIPTACION:
+DECRYPTION:
 
-El proceso de desencriptación convierte el texto encriptado de vuelta a su forma original. Ejemplos de este proceso son:
+The decryption process converts the encrypted text back to its original form. Examples of this process are:
 
-Entrada: "henterllober"
-Proceso: La secuencia "enter" se convierte en "e" y "ober" se convierte en "o".
-Salida: "hello"
+Input: "henterllober"
+Process: The sequence "enter" becomes "e" and "ober" becomes "o".
+Output: "hello"
 
-Entrada: "friteriend"
-Proceso: La secuencia "imes" se convierte en "i".
-Salida: "friend"
+Input: "friteriend"
+Process: The sequence "imes" becomes "i".
+Output: "friend"
 
-Entrada: "cumpufater"
-Proceso: La secuencia "ufat" se convierte en "u".
-Salida: "computer"
+Input: "cumpufater"
+Process: The sequence "ufat" becomes "u".
+Output: "computer"
 
+EXTRA FEATURES:
 
-FUNCIONALIDAD EXTRA: 
-
-Botón Copiar: Permite copiar el texto encriptado o desencriptado al portapapeles. Este botón reemplaza la funcionalidad de Ctrl+C o la opción "Copiar" en el menú de aplicaciones.
+Copy Button: Allows you to copy the encrypted or decrypted text to the clipboard. This button replaces the functionality of Ctrl+C or the "Copy" option in the application menu.
